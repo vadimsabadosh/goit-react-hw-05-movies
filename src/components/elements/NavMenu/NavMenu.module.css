@@ -1,0 +1,14 @@
+.link {
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+.link:hover {
+  color: darkgrey;
+}
+.active {
+  border-bottom: 2px solid #fff;
+}
+.main {
+  padding: 30px 0;
+}

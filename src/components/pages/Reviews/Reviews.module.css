@@ -1,0 +1,22 @@
+.ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.li {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(247, 239, 239);
+  margin-bottom: 10px;
+}
+.li h6 {
+  font-weight: bold;
+  font-size: 18px;
+}
+.li p {
+  max-height: 350px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
