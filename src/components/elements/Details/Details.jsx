@@ -5,12 +5,14 @@ import PropsTypes from 'prop-types';
 function Details({ poster_path, title, vote_average, overview, genres }) {
   return (
     <div className={styles.container}>
-      <img
-        src={poster_path && `https://image.tmdb.org/t/p/w300${poster_path}`}
-        alt={title}
-        title={title}
-        className={styles.image}
-      />
+      {poster_path && (
+        <img
+          src={`https://image.tmdb.org/t/p/w300${poster_path}`}
+          alt={title}
+          title={title}
+          className={styles.image}
+        />
+      )}
       <div className={styles.info}>
         <h4 className={styles.title}>{title}</h4>
         <p className={styles.text}>

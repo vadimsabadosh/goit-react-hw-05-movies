@@ -16,10 +16,12 @@ export default function Cast() {
       <ul className={styles.list}>
         {movie?.cast?.map(({ id, profile_path, name, character }) => (
           <li key={id} className={styles.list_item}>
-            <img
-              src={`https://image.tmdb.org/t/p/original${profile_path}`}
-              alt=""
-            />
+            {profile_path && (
+              <img
+                src={`https://image.tmdb.org/t/p/original${profile_path}`}
+                alt=""
+              />
+            )}
             <h6>{name}</h6>
             <p>Character: {character}</p>
           </li>
