@@ -18,7 +18,7 @@ export default function Movies() {
     if (query) {
       fetchMoviesBySearch(query).then(data => setData(data.results));
     }
-  }, []);
+  }, [searchParams]);
 
   const onSubmit = () => {
     if (search) {
