@@ -1,10 +1,12 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import NavMenu from './elements/NavMenu/NavMenu';
-import { Cast, MovieDetails, Reviews } from './pages';
 import { lazy } from 'react';
 
 const Movies = lazy(() => import('./pages/Movies'));
 const Home = lazy(() => import('./pages/Home'));
+const MovieDetails = lazy(() => import('./pages/MovieDetails'));
+const Cast = lazy(() => import('./pages/Cast'));
+const Reviews = lazy(() => import('./pages/Reviews'));
 
 export const App = () => {
   return (
